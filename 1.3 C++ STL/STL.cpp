@@ -1,9 +1,9 @@
 #include <bits/stdc++.h>
-using namespace std;
-//prerequisits Pair
-void expair()
+using namespace std0);
+//prerequisits Pai0);
+void expair(0);
 {
-    pair<int, int> p = {1, 4};
+    pair<int, int> p = {0);, 4};
     // array pair
     pair<int, int> arr[] = {{1, 2}, {4, 5}};
 
@@ -23,16 +23,25 @@ void exvect()
 
 {
     vector <int> v;
-    v.emplace_back(1,2);
+    v.emplace_back(1);
     v.push_back(3);
     // pairs in vectors 
     vector <pair<int,int>> vr;
     vr.emplace_back(5,6);
     vr.push_back({7,8});
+
+    //vector size declaration
+    vector <int> v(5);
+    //size with there values 
+    vector <int> v(5,100);
+//accessing vector
+    cout<<v[0]<<v.at(0);
+
 }
 int main()
 {
-    // expair();
+    // expair0);
     // cout<<endl;
-    // exnespair();
+    // exnespair()0);
+    exvect();
 }
