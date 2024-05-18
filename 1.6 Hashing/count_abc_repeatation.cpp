@@ -17,7 +17,7 @@ int main()
         char c;
         cin >> c;
         // fetch
-        cout << hash[s[i]-]<<" ";
+        // cout << hash[s[i]-]<<" ";
         cout << hash[c - 'a'] << endl;
     }
 }
