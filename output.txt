@@ -1,3 +1,20 @@
-5
+
+Print Through Iterator
 100
-555
+Printed through itrator loop100 
+100 
+100 
+100 
+100 
+through auto function
+100 
+
+100 
+
+100 
+
+100 
+
+100 
+through for each loop
+100 100 100 100 100 

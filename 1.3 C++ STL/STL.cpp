@@ -13,12 +13,14 @@ void expair()
     cout << arr[0].second << endl
          << arr[1].first;
 }
+// nested pairs
 void exnespair()
 {
     pair<int, pair<int, pair<int, int>>> npr = {1, {2, {3, 4}}};
     // accessing nested pair
     cout << npr.second.second.first;
 }
+// Vectors
 void exvect()
 
 {
@@ -37,9 +39,51 @@ void exvect()
     // coping vector
     vector<int> v3(v2);
     // accessing vector
-    cout << v[0] << endl
-         << v2.at(5 - 1) << endl
-         << v3[3] + 455;
+    // cout << v[0] << endl
+    //      << v2.at(5 - 1) << endl
+    //      << v3[3] + 455;
+
+    // Iterators
+    vector<int>::iterator it = v2.begin();
+    it + 1;
+    cout << endl
+         << "Print Through Iterator" << endl
+         << *(it) << endl
+         << "Printed through itrator loop";
+    // end points to the memory location Right after Last element
+    // vector<int>::iterator ite = v2.end();
+    // rend points to the memory location Left before the first element
+    // vector<int>::iterator itre = v1.rend();
+    // rbegin points to the last element of the vector
+    // vector<int>::iterator itrb = v3.rbegin();
+
+    for (vector<int>::iterator it = v2.begin(); it != v2.end(); it++)
+    {
+        cout << *(it) << " " << endl;
+    }
+    // or we can use auto functilon
+    cout<<"through auto function";
+    for (auto it = v2.begin(); it != v2.end(); it++)
+    {
+        cout <<endl
+              << *(it) << " " << endl;
+    }
+    cout<<"through for each loop"<<endl;
+    for (auto it : v2)
+    {
+        cout<<it <<" ";
+    }
+
+    //Erasing Vectors
+
+    v.erase(v.begin()+1);
+    //Erasing Multiple Lines at Once
+    // {10,30,20,100,40,50}
+    v.erase(v.begin()+1,v.begin()+3);
+    //{10,100,40,50}
+
+    //Inserting Elements
+    
 }
 int main()
 {
